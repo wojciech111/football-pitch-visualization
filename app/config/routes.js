@@ -7,7 +7,7 @@ const Navigator = StackNavigator({
         PitchSimulator: {
             screen: PitchSimulator,
             navigationOptions: {
-                title: 'Simulate',
+                title: 'Football Simulator',
                 //header: null
             },
         }

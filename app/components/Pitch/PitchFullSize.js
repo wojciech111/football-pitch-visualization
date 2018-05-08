@@ -1,21 +1,30 @@
 import React from 'react';
 import {View, Image, Dimensions} from 'react-native';
 
-//import styles from './styles';
 
 const PitchFullSize = (props) => {
     let  deviceWidth = Dimensions.get('window').width;
     let  deviceHeight = Dimensions.get('window').height;
-    //console.log("deviceWidth:"+deviceWidth);
+    let  pitchWidth, pitchHeight, leftMargin=0;
+
+    if (deviceWidth>deviceHeight){ //orientation horizontal
+        pitchWidth=deviceHeight * 0.8 * 1.27;
+        pitchHeight= deviceHeight * 0.8;
+        leftMargin=40;
+    } else { // orientation vertical
+        pitchWidth=deviceWidth;
+        pitchHeight=deviceWidth*0.77;
+    }
     const styles = {
         imageContainer: {
             backgroundColor: 'orange',
-            width: (deviceWidth * 0.65),
-            height: (deviceHeight * 0.8),
+            width: pitchWidth,
+            height: pitchHeight,
             display: 'flex',
-            justifyContent: 'center', /* align horizontal */
-            alignItems: 'center', /* align vertical */
-            marginTop:30
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop:30,
+            marginLeft: leftMargin
         },
         image: {
             width: '100%',

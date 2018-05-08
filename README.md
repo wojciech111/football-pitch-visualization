@@ -1,4 +1,26 @@
-# Wojtek create-react-native-app boilerplate
+#  Football visualization simulator
+
+## How to run
+To install and start an app you need to run in terminal: npm install & npm start .
+Next you need to  open iPhone X Simulator (Program "Simulator" on mac if you installed XCode).
+Next you need to press "i" in terminal to run expo inside simulator.
+
+## What I didn't do...
+It was my first meeting with animations in React Native and I found out that I need to practice them on more trivial example. They are not as intuitive as css animations in React.js. I had problem with starting animations when component receive new props.
+
+I still didn't do tests in React Native. Jest is the same but time is up and not everything goes here as smooth as in React.js.
+
+Design is awful that eyes hurts. Sorry for that.
+
+## final words
+
+Thank you for this interesting challenge and I hope you are going to like it.
+
+
+
+
+
+# My Notes
 
 * to start
   * yarn start - in directory
@@ -35,7 +57,7 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
-## Table of Contents
+## Table of Contents for create-react-app
 
 * [Updating to New Releases](#updating-to-new-releases)
 * [Available Scripts](#available-scripts)
