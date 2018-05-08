@@ -23,16 +23,16 @@ class PitchSimulator extends Component {
 
         // Toggle the state every second
         setInterval(() => {
-            if(this.state.currentFrame < this.state.frameLength - 1) {
+            if(this.state.currentFrame < this.state.frameLength - 2) {
                 this.setState(previousState => {
                     return {currentFrame: previousState.currentFrame + 1};
                 });
             } else {
                 this.setState(() => {
-                    return {currentFrame: 0};
+                    //return {currentFrame: 0};
                 });
             }
-        }, 100);
+        }, 10000);
     }
     componentWillMount() {
         let frame = 0;

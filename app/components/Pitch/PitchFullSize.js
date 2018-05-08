@@ -15,7 +15,8 @@ const PitchFullSize = (props) => {
             display: 'flex',
             justifyContent: 'center', /* align horizontal */
             alignItems: 'center', /* align vertical */
-            marginTop:30
+            marginTop:30,
+            marginLeft: 50
         },
         image: {
             width: '100%',
